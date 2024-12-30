@@ -1,0 +1,72 @@
+/** @format */
+
+.signup .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.signup .left {
+  text-align: center;
+}
+
+.signup .left img {
+  width: 400px;
+}
+
+.signup .left img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.signup .right p {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.signup .right {
+  padding: 1rem;
+}
+
+.signup .right .input-container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.signup .right .input-container .input-form .top {
+  display: flex;
+  gap: 15px;
+}
+
+.signup .right .input-container .input-form input {
+  width: 100%;
+  margin: 0.625rem 0.8rem 1rem 0rem;
+}
+
+.signup .right .input-container .input-form textarea {
+  padding: 12px 32px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  border-radius: 24px 4px;
+  font-size: 1rem;
+  font-family: "Poppin", sans-serif;
+  width: 100%;
+  margin: 0.625rem 0.8rem 1rem 0rem;
+}
+
+@media screen and (max-width: 940px) {
+  .signup .container {
+    grid-template-columns: 1fr;
+  }
+
+  .signup .right .input-container .input-form .top {
+    display: block;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}

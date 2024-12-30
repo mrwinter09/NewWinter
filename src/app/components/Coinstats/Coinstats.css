@@ -1,0 +1,111 @@
+/** @format */
+
+table {
+  border-spacing: 10px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.stats .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.stats .container .search-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats .container .td-coin-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0px;
+}
+
+.stats .container .coin-price {
+  text-align: center;
+}
+
+.stats .search-banner {
+  padding: 1rem;
+}
+
+.stats .search-banner p {
+  padding: 0.3rem;
+}
+
+.stats h1 {
+  padding: 1rem 0;
+}
+
+.stats .input-container {
+  padding: 1rem 0;
+}
+
+.stats .checkbox-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats .right .staking-container {
+  width: 100%;
+  display: flex;
+}
+
+.stats .right .staking-container .input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats img {
+  width: 64px;
+  height: 64px;
+}
+
+.btn-staking {
+  margin: 1rem 0;
+  width: 50%;
+}
+
+.sb-blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+/* @media screen and (max-width: 940px) {
+  .stats .container {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+
+  .btn-staking {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #checkbox {
+    width: 5%;
+  }
+} */
+
+@media screen and (max-width: 720px) {
+  .stats .container .mobile {
+    display: none;
+  }
+}

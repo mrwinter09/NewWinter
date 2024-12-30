@@ -1,0 +1,16 @@
+/** @format */
+
+.coin-item-row {
+  margin: 1rem auto;
+  padding: 0.7rem 1rem;
+  box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px;
+  border-radius: 8px;
+}
+
+.green {
+  color: var(--primary);
+}
+
+.red {
+  color: var(--red);
+}

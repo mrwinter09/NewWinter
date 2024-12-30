@@ -1,0 +1,139 @@
+/** @format */
+
+.main-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 1rem;
+  gap: 20px;
+}
+
+.main-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 20px;
+}
+
+.main-stats-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 20px;
+}
+
+.main-stats .stats-left .stats-top {
+  display: flex;
+  gap: 5px;
+}
+
+.main-stats .stats-left .stats-market {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 5px;
+}
+
+.main-stats .stats-left .stats-market .stats-title-color {
+  color: grey;
+}
+
+.main-stats .stats-left .stats-market .stats-volume {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-stats .stats-right .stats-volume {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-stats .stats-market-right {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  margin: 27px 0px;
+}
+
+.main-stats .stats-market-right-social {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px;
+  margin: 32px 0px;
+}
+
+.main-stats .stats-right .stats-title-color {
+  color: grey;
+}
+
+.main-stats .stats-left .stats-top .stats-top-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.coin-info .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.coin-container .content {
+  margin: 1rem auto;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px;
+  border-radius: 8px;
+}
+
+.main-header {
+  display: flex;
+  gap: 40px;
+}
+
+.main-logo {
+  width: 110px;
+  height: 110px;
+}
+
+.about h3 {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    gap: 20px;
+  }
+
+  .main-stats .stats-left .stats-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .coin-info .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-stats .stats-market-right-social a .social-icon {
+    font-size: 30px;
+  }
+}

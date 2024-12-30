@@ -1,0 +1,48 @@
+/** @format */
+
+.hero .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hero .left {
+  padding: 1rem;
+}
+.hero h1 {
+  padding: 1rem 0;
+}
+
+.hero .input-container {
+  padding: 1rem 0;
+}
+
+.hero .checkbox-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .img-container {
+  width: 100%;
+  display: flex;
+}
+
+.hero img {
+  max-width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 940px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+
+  #checkbox {
+    width: 5%;
+  }
+}

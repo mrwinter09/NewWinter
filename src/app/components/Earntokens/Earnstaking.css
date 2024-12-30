@@ -1,0 +1,117 @@
+/** @format */
+
+.earn .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.earn hr {
+  width: 100%;
+  border: 1px solid #118c4f;
+}
+
+.earn .container {
+  padding: 1rem;
+}
+
+.earn .left {
+  padding: 1rem;
+}
+
+.earn .left p {
+  padding: 0.3rem;
+}
+
+.earn .right {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.earn .right p {
+  padding: 0.3rem;
+}
+
+.earn h1 {
+  padding: 1rem 0;
+}
+
+.earn .input-container {
+  padding: 1rem 0;
+}
+
+.earn .checkbox-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.earn .right .staking-container-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.earn .right .staking-container-left .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.earn .right .staking-container-left .submit-container {
+  display: flex;
+}
+.earn .right .staking-container-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.earn .right .staking-container-right .input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.earn img {
+  max-width: 80%;
+  margin: auto;
+}
+
+btn-staking {
+  margin: 1rem 0;
+  width: 50%;
+}
+
+#btn-finance {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+@media screen and (max-width: 940px) {
+  .earn .container {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+
+  .btn-staking {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #checkbox {
+    width: 5%;
+  }
+}

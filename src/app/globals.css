@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #118c4f;
+  --background: #f5f8ff;
+  --red: #ff0000;
+}
+/* TODO Add colors to variable tags. make the light version with the light var colors. */
+
+.dark {
+  --color-bg-primary: #2d3748;
+  --color-bg-secondary: #283141;
+  --color-text-primary: #dbdbdb;
+  --color-text-secondary: #e2e8f0;
+  --color-text-accent: #81e6d9;
+  --color-bg-input: #4a5361;
+  --color-bg-button: #81e6d9;
+}
+
+.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-accent: #2b6cb0;
+  --color-bg-input: #edf2f7;
+  --color-bg-button: #2b6cb0;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.title {
+  max-width: 1240px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Outfit, Poppins, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  padding: 14px 32px !important;
+  border: 1px solid var(--primary) !important;
+  background-color: var(--primary) !important;
+  color: #fff !important;
+  border-radius: 24px 4px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  /* width: 100% !important; */
+}
+
+.btn:hover {
+  box-sizing: rgb(0 0 0 / 15%) 0px 8px 24px !important;
+}
+
+input {
+  padding: 12px 32px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  border-radius: 24px 4px;
+  font-size: 1rem;
+  margin-right: 0.8rem;
+  font-family: "Poppin", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 54%;
+    margin: 1rem 0;
+  }
+
+  .btn:hover {
+    box-sizing: rgb(0 0 0 / 15%) 0px 8px 24px;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-200 text-zinc-950;
+  }
+}
