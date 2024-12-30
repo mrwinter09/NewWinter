@@ -2,7 +2,8 @@ import { createAuth } from "thirdweb/auth";
 import { privateKeyToAccount } from "thirdweb/wallets";
 import { client } from "../client";
 
-const privateKey = process.env.THIRDWEB_PRIVATE_KEY || "";
+const privateKey =
+  "984b4ce0eeff6fc31b611774341cc0d04d19798f77a582d68fd73852b525f6ca";
 
 if (!privateKey) {
   throw new Error("Private key not found");
